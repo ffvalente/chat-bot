@@ -1,0 +1,79 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+body {
+    box-sizing: border-box;
+    font-family: Roboto;
+    background-image: url("./imagens/background.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    
+  }
+  
+#chatbot-container {
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 550px;
+    padding: 20px;
+    position: relative; 
+    backdrop-filter: blur(10px);
+    opacity: 0.85;
+  }
+  
+  #output {
+    height: 350px;
+    margin-bottom: 10px;
+    overflow-y: auto;   
+  }
+  
+  #input-container {
+    display: flex;
+    margin-top: 10px;
+    
+  }
+  
+  #input {
+    border-radius: 5px;
+    border: none;
+    flex: 1;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  #submit {
+    background-color: #128CFE;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 10px;
+    transition: background-color 0.2s;
+  }
+  
+  #submit:hover {
+    background-color: #72afe0;
+  }
+  
+  .pergunta {
+    margin-bottom: 5px;
+  }
+  
+  .pergunta span {
+    color: rgb(12, 0, 0);
+    font-weight: bold;
+  }
+  
+  .resposta span {
+    color: #128CFE;
+    font-weight: bold;
+  }
+ 
+
+
+  
