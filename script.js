@@ -13,19 +13,19 @@ const perguntas = {
  
 };
 
-// Seleciona os elementos do DOM
+//Elementos do DOM
 const chatbotContainer = document.getElementById('chatbot-container');
 const output = document.getElementById('output');
 const input = document.getElementById('input');
 const submit = document.getElementById('submit');
 
-// Adiciona um evento de clique para o botão "Enviar"
+// Add evento de clique para o botão "Enviar"
 submit.addEventListener('click', () => {
   const pergunta = input.value.toLowerCase();
 
 
 
-  // Verifica se a pergunta está no objeto de perguntas e respostas
+  // Checagem da pergunta se está no objeto de perguntas e respostas
   if (pergunta in perguntas) {
     output.innerHTML += '<div class="pergunta"><span>Você:</span> ' + pergunta+ '</div>' +
                         '<div class="resposta"><span>Chat-bot:</span> ' + perguntas[pergunta] + '</div>';
@@ -38,7 +38,7 @@ submit.addEventListener('click', () => {
   // Limpa o campo de entrada
   input.value = '';
 
-  // Faz o scroll da janela para o final
+  // Scrollda janela para o final
   output.scrollTop = output.scrollHeight;
 });
 
